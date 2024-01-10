@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bree+Serif&family=Concert+One&display=swap&family=Kalnia:wght@600&display=swap');
+/*?Fonts: ADLaM Display, Concert One, Kalnia*/
+
+h1{
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 43px;
+  color: #E04136;
+}
+/**----------------------------my knowledge--------------------------**/
+.my_knowledge{
+  font-size: 28px;
+  margin: 50px;
+  list-style: none;
+
+}
+
+.my_knowledge li{
+  padding-bottom: 7px;
+  color: aliceblue;
+}
+
+.my_knowledge li::before{
+  content: "⭐️";
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.container{
+  padding-top: 2.8vh;
+  padding-bottom: 2.8vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 90px;
+  background-color:#070A0D;
+}
+  
+.container .progress{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  color: aliceblue;
+  background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+  box-shadow: 0 0 17px #78797a;
+}
+  
+.container .progress h3{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+  
+.container .progress h3 span{
+  font-size: 18px;
+  font-weight: bolder;    
+}
+  
+.container .progress h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: var(--clr);
+  text-transform: uppercase;
+}
+  
+.container .progress::before{
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+  
+}
+
+.container .progress::after{
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border-radius: 50%;
+  background:#21262c;
+}
+
+.container .progress::before{
+  background: var(--clr);
+  transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+
+.container .progress.less::before{
+  transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+  /**-----------------------------------------MY PROJECTS---------------------------------------------------------*/
+  #img-container {
+    text-align: center; /* Centrar el texto dentro del contenedor */
+  }
+  
+  .projects-links {
+    display: inline-block;
+    background-color: #212020;
+    margin: 20px; 
+    padding:10px 0px 10px 0px;
+    text-decoration: none;
+    color: #fff; 
+    border-radius: 30px;
+  }
+  
+  .projects-tittle {
+    font-size: 27px;
+    font-family: Kalnia;
+    color: #B2BEBF;
+  }
+  
+  img {
+    width: 300px;
+    height: 300px;
+    margin: 10px 0 10px 0px;
+  }
+  
+  .img-text {
+    font-size: 18px;
+  }
+  
+  .projects-links:hover {
+    border: 1px solid #04B2D9;
+    padding: 20px 5px 20px 5px;
+    transition: all 0.26s linear; 
+  }
+  
+  .projects-links:hover .projects-tittle {
+    font-size: 35px;
+    color: #04B2D9; 
+    transition: all 0.26s linear; 
+  }
+  
+  .projects-links:hover img {
+    width: 310px;
+    height: 310px;
+    transition: all 0.26s linear; 
+  }
+  
+  .projects-links:hover .img-text {
+    font-size: 20px; 
+    transition: all 0.26s linear; 
+  }
+  
+  .projects-links:not(:hover),
+  .img:not(:hover),
+  .img-text:not(:hover),
+  .projects-tittle:not(:hover){
+    transition: all 0.37s linear;
+  }
